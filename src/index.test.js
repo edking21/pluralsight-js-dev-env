@@ -9,7 +9,7 @@ describe("Our first test", () => {
 });
 
 describe("index.html", () => {
-  it("should not have h1 that says users", () => {
+  it("should have h1 that says users", () => {
     const index = fs.readFileSync("./src/index.html", "utf-8");
     const { JSDOM } = jsdom;
     const dom = new JSDOM(index);
